@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enzo Manuel Tarazona Chicmana · Portafolio</title>
+<meta name="description" content="Especialista en Sistemas de Información: dirección de proyectos de TI y análisis de datos.">
+<meta property="og:title" content="Enzo Manuel Tarazona Chicmana · Portafolio">
+<meta property="og:description" content="Especialista en Sistemas de Información: dirección de proyectos de TI y análisis de datos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8fb;--card:#fff;--ink:#14213d;--muted:#56607a;--line:#e3e7ef;--accent:#1d5fd6;--accent-soft:#e8f0ff;--green:#0f8a5f;--green-soft:#e3f6ee}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#151b24;--ink:#e6edf3;--muted:#9aa5b5;--line:#283140;--accent:#5b9dff;--accent-soft:#1a2738;--green:#3fbf86;--green-soft:#15291f}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:14px;flex-wrap:wrap}
+.brand{font-weight:800;color:var(--ink);letter-spacing:-.01em}.brand:hover{text-decoration:none}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{color:var(--muted);font-size:.93rem;font-weight:500}nav ul a.active,nav ul a:hover{color:var(--ink);text-decoration:none}
+header.hero{padding:60px 0 36px}
+.hero-grid{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
+.avatar{width:156px;height:156px;border-radius:50%;object-fit:cover;border:4px solid var(--card);box-shadow:0 8px 28px rgba(0,0,0,.13);background:var(--line)}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.78rem;margin:0}
+h1{font-size:clamp(1.85rem,4vw,2.7rem);line-height:1.15;margin:.25em 0 .3em;letter-spacing:-.02em}
+h2{font-size:1.55rem;margin:0 0 .35em;letter-spacing:-.01em}h3{margin:.15em 0 .3em;font-size:1.12rem}
+.lead{color:var(--muted);font-size:1.07rem;max-width:690px;margin:0}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;padding:10px 18px;border-radius:9px;font-weight:600;font-size:.95rem;border:1px solid var(--line);color:var(--ink);background:var(--card)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.btn:hover{text-decoration:none;filter:brightness(1.06)}
+section{padding:38px 0}.sub{color:var(--muted);margin:0 0 22px;max-width:720px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column}
+.card p{color:var(--muted);margin:.25em 0 .9em}
+a.card{color:inherit;transition:transform .15s,box-shadow .15s,border-color .15s}
+a.card:hover{text-decoration:none;transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.09);border-color:var(--accent)}
+.icon{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;font-size:1.35rem;background:var(--accent-soft);margin-bottom:12px}
+.avatar.initials{display:grid;place-items:center;font-size:3rem;font-weight:800;color:#fff;background:var(--accent)}
+.icon.g{background:var(--green-soft)}
+.go{margin-top:auto;color:var(--accent);font-weight:700;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.chip{background:var(--accent-soft);color:var(--ink);font-size:.78rem;padding:3px 10px;border-radius:999px}
+.tag{align-self:flex-start;font-size:.7rem;font-weight:700;letter-spacing:.03em;padding:2px 9px;border-radius:999px;margin-bottom:10px;background:var(--line);color:var(--muted);text-transform:uppercase}
+.tag.live{background:var(--green-soft);color:var(--green)}
+.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 16px;text-align:center}
+.stat b{display:block;font-size:1.9rem;line-height:1.2;color:var(--accent)}.stat span{color:var(--muted);font-size:.88rem}
+.timeline{border-left:2px solid var(--line);margin-left:6px;padding-left:24px}
+.job{position:relative;margin-bottom:28px}.job:last-child{margin-bottom:0}
+.job:before{content:"";position:absolute;left:-31px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.job .when{color:var(--muted);font-size:.88rem}.job ul{margin:.4em 0 0;padding-left:18px;color:var(--muted)}
+ul.clean{margin:0;padding-left:18px;color:var(--muted)}ul.clean li{margin-bottom:4px}
+.skills{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.skills .card h3{font-size:1rem}
+.note{background:var(--accent-soft);border-radius:12px;padding:14px 18px;color:var(--ink);font-size:.93rem}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem;text-align:center;margin-top:20px}
+footer .links{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin:0 0 6px}footer p{margin:0}
+@media (max-width:640px){header.hero{padding:40px 0 24px}.hero-grid{grid-template-columns:1fr;text-align:center;gap:20px}.avatar{margin:0 auto;width:128px;height:128px}.lead{margin:0 auto}.btns{justify-content:center}nav .wrap{justify-content:center;padding:10px 16px}nav ul{gap:14px;justify-content:center}.stats{grid-template-columns:1fr 1fr}.stat b{font-size:1.5rem}.grid.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="brand" href="https://enzotarazona.github.io/">Enzo Tarazona</a><ul><li><a href="https://enzotarazona.github.io/" class="active">Inicio</a></li><li><a href="https://enzotarazona.github.io/direccion-proyectos/">Dirección de Proyectos</a></li><li><a href="https://enzotarazona.github.io/analisis-datos/">Análisis de Datos</a></li><li><a href="https://enzotarazona.github.io/#contacto">Contacto</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap hero-grid">
+<img class="avatar" src="https://github.com/enzotarazona.png" alt="Foto de Enzo Manuel Tarazona Chicmana" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar initials',textContent:'ET'}))">
+<div>
+<p class="eyebrow">Líder de Proyectos TI · Analista de Datos &amp; BI</p>
+<h1>Enzo Manuel Tarazona Chicmana</h1>
+<p class="lead">Ingeniero de Sistemas con más de 9 años liderando proyectos de TI, analítica de datos, transformación digital y migraciones a la nube en logística, aduanas, transporte y gestión financiera. Impulso la eficiencia operativa y la toma de decisiones basada en datos.</p>
+<div class="btns">
+<a class="btn primary" href="#portafolio">Ver portafolio</a>
+<a class="btn" href="cv.pdf">Descargar CV</a>
+<a class="btn" href="https://www.linkedin.com/in/enzo-manuel-tarazona-chicmana">LinkedIn</a>
+</div>
+</div>
+</div></header>
+
+<section><div class="wrap">
+<div class="stats">
+<div class="stat"><b>9+</b><span>años liderando proyectos de TI</span></div>
+<div class="stat"><b>5</b><span>profesionales liderados bajo SCRUM</span></div>
+<div class="stat"><b>14+</b><span>tableros y KPI en Power BI y Tableau</span></div>
+<div class="stat"><b>3 h</b><span>ahorradas por ejecutivo con Power Platform</span></div>
+</div>
+</div></section>
+
+<section id="portafolio"><div class="wrap">
+<h2>Portafolio</h2>
+<p class="sub">Mi trabajo está organizado en dos áreas. Cada una reúne casos y proyectos con datos públicos o ficticios.</p>
+<div class="grid two">
+<a class="card" href="https://enzotarazona.github.io/direccion-proyectos/">
+<div class="icon">📋</div>
+<h3>Dirección de Proyectos de TI</h3>
+<p>Casos de proyectos liderados: planificación, gestión del equipo con SCRUM, migraciones, integraciones con SUNAT y SAP, y resultados medibles.</p>
+<div class="chips"><span class="chip">SCRUM</span><span class="chip">Portafolio de proyectos</span><span class="chip">Requerimientos</span><span class="chip">.NET C#</span></div>
+<p class="go" style="margin-top:16px">Ver proyectos →</p>
+</a>
+<a class="card" href="https://enzotarazona.github.io/analisis-datos/">
+<div class="icon g">📊</div>
+<h3>Análisis de Datos e Inteligencia de Negocios</h3>
+<p>Datamarts, procesos ETL, tableros de KPI y análisis en Python que convierten datos operativos en decisiones.</p>
+<div class="chips"><span class="chip">SQL Server</span><span class="chip">SSIS</span><span class="chip">Power BI</span><span class="chip">Python</span></div>
+<p class="go" style="margin-top:16px">Ver proyectos →</p>
+</a>
+</div>
+</div></section>
+
+<section id="experiencia"><div class="wrap">
+<h2>Experiencia</h2>
+<p class="sub">Trayectoria liderando proyectos y equipos de sistemas.</p>
+<div class="timeline">
+<div class="job"><h3>Líder de Proyectos de TI · Mantra Consultores S.A.</h3><span class="when">Abr 2024 – Presente</span>
+<ul><li>Nuevos módulos de Compras, Facturación, Contabilidad, Guía de Remisión y Transportista en .NET C#, con mejor integridad de datos y menores tiempos operativos.</li><li>Integración con las APIs de SUNAT.</li><li>Datamart de Aduanas para múltiples agentes y KPI en Power BI y Python que redujeron tiempos críticos de nacionalización y exportación.</li></ul></div>
+<div class="job"><h3>Líder de Proyectos de TI · Infinia Operador Logístico S.A.</h3><span class="when">Abr 2021 – Mar 2024</span>
+<ul><li>Migración de sistemas web, plataformas y bases de datos; integración con SAP.</li><li>Datamart corporativo con 3 fuentes, 2 ETL mejorados (Aduanas y Almacén) y 10 dashboards Power BI de 3 a 6 páginas.</li><li>3 flujos en Power Platform que ahorran 3 horas por ejecutivo; equipo de 3 personas bajo SCRUM.</li></ul></div>
+<div class="job"><h3>Líder de Proyectos de TI / Líder de Desarrollo de SW · Ausa Operaciones Logísticas S.A.</h3><span class="when">Jul 2018 – Abr 2021</span>
+<ul><li>Gestión del portafolio de proyectos con metodologías ágiles y tradicionales; equipo de desarrollo de 5 personas con cumplimiento de SLA.</li><li>Migración de servidores on-premise a la nube y digitalización web.</li><li>3 procesos ETL en SSIS, 4 KPI (Aduanas, Transporte, Logística y Almacén) y adopción de Power Platform con capacitación a usuarios.</li></ul></div>
+</div>
+</div></section>
+
+<section id="habilidades"><div class="wrap">
+<h2>Habilidades</h2>
+<div class="skills">
+<div class="card"><h3>Gestión</h3><ul class="clean"><li>SCRUM y metodologías tradicionales</li><li>Liderazgo de equipos de desarrollo</li><li>Levantamiento de requerimientos</li></ul></div>
+<div class="card"><h3>Desarrollo</h3><ul class="clean"><li>.NET / C#, Python</li><li>Integración con APIs (SUNAT) y SAP</li><li>Migración de sistemas</li></ul></div>
+<div class="card"><h3>Datos y BI</h3><ul class="clean"><li>SQL Server, MySQL, Datamarts</li><li>SSIS, SSRS</li><li>Power BI (DAX, Power Query), Tableau</li></ul></div>
+<div class="card"><h3>Automatización</h3><ul class="clean"><li>Power Apps, Power Automate</li><li>SharePoint</li><li>Capacitación en low-code</li></ul></div>
+</div>
+</div></section>
+
+<section id="formacion"><div class="wrap">
+<h2>Formación</h2>
+<div class="grid">
+<div class="card"><h3>Ingeniería de Sistemas e Informática</h3><p>Universidad Nacional Mayor de San Marcos</p></div>
+<div class="card"><h3>Diplomado en Dirección de Proyectos y Habilidades Directivas</h3><p>Universidad del Pacífico</p></div>
+<div class="card"><h3>Certificaciones</h3><p>Business Intelligence SQL Server, Data Warehouse con SQL Server y Power BI, Administración y Consultas en SQL Server (Cibertec) · Power BI Avanzado y Python (SKILL) · Power Platform Avanzado (DMC).</p></div>
+</div>
+</div></section>
+
+<section id="contacto"><div class="wrap">
+<div class="card" style="text-align:center;align-items:center;padding:34px 22px">
+<h2>¿Conversamos?</h2>
+<p style="max-width:560px">Estoy abierto a oportunidades como líder de proyectos de TI, analista de sistemas o analista de datos y BI.</p>
+<div class="btns" style="justify-content:center;margin-top:8px">
+<a class="btn primary" href="mailto:manuel.tarazona.ch@gmail.com">Escríbeme</a>
+<a class="btn" href="https://www.linkedin.com/in/enzo-manuel-tarazona-chicmana">LinkedIn</a>
+<a class="btn" href="https://github.com/enzotarazona">GitHub</a>
+</div>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<p class="links"><a href="https://www.linkedin.com/in/enzo-manuel-tarazona-chicmana">LinkedIn</a><a href="https://github.com/enzotarazona">GitHub</a><a href="mailto:manuel.tarazona.ch@gmail.com">manuel.tarazona.ch@gmail.com</a></p>
+<p>© 2026 Enzo Manuel Tarazona Chicmana</p>
+</div></footer>
+</body>
+</html>
